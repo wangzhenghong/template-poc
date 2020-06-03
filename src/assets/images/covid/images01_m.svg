@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="437" fill="none" viewBox="0 0 1024 437">
+    <path fill="#D8D8D8" d="M0 0H1024V436.907H0z"/>
+    <mask id="prefix__a" width="1024" height="437" x="0" y="0" maskUnits="userSpaceOnUse">
+        <path fill="#fff" d="M0 0H1024V436.907H0z"/>
+    </mask>
+    <g mask="url(#prefix__a)">
+        <path fill="#D8D8D8" d="M0 -54.613H1021.47V496.982H0z"/>
+        <mask id="prefix__b" width="1022" height="552" x="0" y="-55" maskUnits="userSpaceOnUse">
+            <path fill="#fff" d="M0 -54.613H1021.47V496.982H0z"/>
+        </mask>
+        <g mask="url(#prefix__b)">
+            <path fill="url(#prefix__pattern0)" d="M0 -57.344H1026.73V496.98100000000005H0z"/>
+            <path fill="url(#prefix__pattern1)" d="M-10.923 -379.562H1026.727V892.928H-10.923z"/>
+        </g>
+    </g>
+    <defs>
+        <pattern id="prefix__pattern0" width="1" height="1" patternContentUnits="objectBoundingBox">
+            <use transform="scale(.00049 .00073)" xlink:href="#prefix__image0"/>
+        </pattern>
+        <pattern id="prefix__pattern1" width="1" height="1" patternContentUnits="objectBoundingBox">
+            <use transform="matrix(.00133 0 0 .00109 0 0)" xlink:href="#prefix__image1"/>
+        </pattern>
+    </defs>
+</svg>

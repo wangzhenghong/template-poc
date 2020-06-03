@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "MyFullSchematicsSchema",
+  "title": "My Full Schematics Schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "number",
+      "default": 1
+    },
+    "name": {
+      "description": "The name of the new Component.",
+      "type": "string",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the Component?"
+    },
+    "category": {
+      "description": "The category of the new Component.",
+      "type": "string",
+      "default": "landing",
+      "enum": ["landing", "form"],
+      "x-prompt": {
+        "message": "Which template would you like to use?",
+        "type": "list",
+        "items": [
+          {
+            "value": "landing",
+            "label": "Landing Component"
+          },
+          {
+            "value": "form",
+            "label": "Form Component"
+          }
+        ]
+      },
+      "x-user-analytics": 5
+    }
+  },
+  "required": ["name"]
+}

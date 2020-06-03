@@ -1,0 +1,26 @@
+$mb: 375px;
+$ip6: 376px;
+$mbMax: 767px;
+$tabletMin: 768px;
+$tabletMax: 1024px;
+$desktopMin: 1025px;
+$designDesktopMin: 1279px;
+$designDesktop: 1280px;
+
+$breakpoints: (
+  'moble': 'screen and ( max-width: $mb) and (max-width: $mbMax)',
+  'table': 'screen and ( min-width: $tabletMin) and (max-width: $tabletMax)',
+  'desktop': 'screen and (min-width: $desktopMin) and (max-width: 1280px)'
+) !default;
+
+// _mixins
+@mixin respond-to($breakpoint) {
+  $query: map-get($breakpoints, $breakpoint);
+  @if not $query {
+    @error 'No value found for `#{$breakpoint}`.';
+  }
+
+  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+    @content;
+  }
+}
